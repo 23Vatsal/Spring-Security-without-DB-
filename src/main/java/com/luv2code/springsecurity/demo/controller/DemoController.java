@@ -11,6 +11,18 @@ public class DemoController {
 		return "home";
 	}
 	
-	
+	//Add view for /leaders.
+   @GetMapping("/leaders")
+   public String showLeaders() {
+	   return "leaders";
+   }
+   
+   //Add view for /system
+   @GetMapping("/systems")
+   public String showAdmin() {
+	   return "admins";
+   }
+   
+
 
 }
